@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Webpage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      padding-top: 20px;
+    }
+    div div h1{
+      background-color: gray;
+      width: 100%;
+      text-align: center; 
+      color: white;
+    }
+    .row{
+      display: flex;
+    }
+    .col-md-4{
+
+      flex: 1;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="https://i.pinimg.com/originals/9a/fd/ed/9afded4adf3d90be93854870ccd3f352.jpg" width="60" >Brand Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#list">List</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div id="home">
+      <h1>LAMBORGHINI VIET NAM</h1>
+    </div>
+    
+    <div id="list">
+      <h2>MODELS</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://isp.page/news/wp-content/uploads/2023/09/Lamborghini-Revuelto-A-Thrilling-Hybrid-Supercar_651739abdcc27.jpg" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <h5 class="card-title">LAMBORGHINI REVUELTO</h5>
+              <p class="card-text">MAX.SPEED >350 KM/H | 0-100 KM/H in 2.5S | POWER (COMBINED ICE+EE) 1015CV</p>
+              <a href="https://www.lamborghini.com/en-en/models/revuelto" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://vcdn-vnexpress.vnecdn.net/2021/07/07/Aventador-Ultimae-Coupe-1-3961-1625659942.jpg" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <h5 class="card-title">LAMBORGHINI HURACÁN EVO SPYDER</h5>
+              <p class="card-text">MAX.SPEED 325 KM/H | 0-100 KM/H in 3.1S | POWER (CV) / POWER (KW) 640 CV / 470 kW</p>
+              <a href="https://www.lamborghini.com/en-en/models/huracan/huracan-evo-spyder" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
