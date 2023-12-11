@@ -15,7 +15,10 @@ body {
   width: 100%;
   height: 100%;
   background-color: #c7ddff;
-  position: relative;
+  background-image: url("https://img.freepik.com/free-vector/sea-background-video-conferencing_52683-46343.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -219,9 +222,21 @@ body {
   animation: fish 25s cubic-bezier(0.7, 1, 0.3, 0.5) 0s infinite normal;
 }
 
+.white-fish {
+    left: 0;
+    bottom: 225px;
+    animation: fish 45s cubic-bezier(0.2, 2, 0.8, 0.75) 0s infinite normal;
+  }
+
+.red-fish {
+    right: 0;
+    bottom: 225px;
+    animation: fish 41s cubic-bezier(0.2, 1, 0.3, 0.5) 0s infinite normal;
+  }
+
 .fish-body {
     position: absolute;
-    width: 115px;
+    width: 215px;
     height: 75px;
     border-radius: 50%;
     background-color: orange;
@@ -241,9 +256,20 @@ body {
   background-color: #0098e0;
 }
 
+.white-fish .fish-body {
+    background-color: #f3f4f5;
+  }
+
+.red-fish .fish-body {
+    background-color: #c21010;
+  }
+.red-fish .fish-body {
+    background-color: #c21010;
+  }
+
 .fish-body:before {
     content: "";
-    width: 15px;
+    width: 25px;
     height: 15px;
     background-color: #ffffff;
     position: absolute;
@@ -265,7 +291,7 @@ body {
 
 .top-fin {
     position: absolute;
-    left: 35px;
+    left: 45px;
     top: -23px;
     width: 28px;
     height: 50px;
@@ -286,6 +312,14 @@ body {
 .blue-fish .top-fin {
   background-color: #0098e0;
 }
+
+.white-fish .top-fin {
+    background-color: #f3f4f5;
+  }
+
+.red-fish .top-fin {
+    background-color: #c21010;
+  }
 
 @keyframes tail-fin {
     0% { 
@@ -339,6 +373,14 @@ body {
   background-color: #0098e0;
 }
 
+.white-fish .tail-fin {
+    background-color: #f3f4f5;
+  }
+
+.red-fish .tail-fin {
+    background-color: #c21010;
+  }
+
 .tail-fin:before {
     content: "";
     z-index: 9;
@@ -364,6 +406,14 @@ body {
 .blue-fish .tail-fin:before {
   background-color: #0098e0;
 }
+
+.white-fish .tail-fin:before {
+    background-color: #f3f4f5;
+  }
+
+.red-fish .tail-fin:before {
+    background-color: #c21010;
+  }
 
 @keyframes side-fin {
     0% { 
@@ -414,6 +464,14 @@ body {
   background-color: #0098e0;
 }
 
+.white-fish .side-fin {
+    background-color: #f3f4f5;
+  }
+
+.red-fish .side-fin {
+    background-color: #c21010;
+  }
+
 .scale {
     position: absolute;
     width: 21px;
@@ -436,6 +494,14 @@ body {
   background-color: #0098e0;
 }
 
+.white-fish .scale {
+    background-color: #f3f4f5;
+  }
+
+.red-fish .scale {
+    background-color: #c21010;
+  }
+
 .scale-1 {
     left: 20px;
     bottom: -44px;
@@ -453,27 +519,67 @@ body {
     </style>
 </head>
 <body>
-    <div id="fish-tank">
-        <div id="bubble-field"></div>
-        <div class="fish">
-          <div class="top-fin"></div>
-          <div class="fish-body"></div>
-          <div class="tail-fin"></div>
-          <div class="side-fin"></div>
-          <div class="scale scale-1"></div>
-          <div class="scale scale-2"></div>
-          <div class="scale scale-3"></div>
-        </div>  
-        <div class="fish blue-fish">
-          <div class="top-fin"></div>
-          <div class="fish-body"></div>
-          <div class="tail-fin"></div>
-          <div class="side-fin"></div>
-          <div class="scale scale-1"></div>
-          <div class="scale scale-2"></div>
-          <div class="scale scale-3"></div>
-        </div>
-      </div>
+     <div id="fish-tank">
+            <div id="bubble-field"></div>
+            <div class="plant">
+              <div class="leaf-1"></div>
+            </div>
+            <div class="fish">
+              <div class="top-fin"></div>
+              <div class="fish-body"></div>
+              <div class="tail-fin"></div>
+              <div class="side-fin"></div>
+              <div class="scale scale-1"></div>
+              <div class="scale scale-2"></div>
+              <div class="scale scale-3"></div>
+            </div>  
+            <div class="fish blue-fish">
+              <div class="top-fin"></div>
+              <div class="fish-body"></div>
+              <div class="tail-fin"></div>
+              <div class="side-fin"></div>
+              <div class="scale scale-1"></div>
+              <div class="scale scale-2"></div>
+              <div class="scale scale-3"></div>
+            </div>
+            <div class="fish white-fish">
+                <div class="top-fin"></div>
+                <div class="fish-body"></div>
+                <div class="tail-fin"></div>
+                <div class="side-fin"></div>
+                <div class="scale scale-1"></div>
+                <div class="scale scale-2"></div>
+                <div class="scale scale-3"></div>
+              </div>
+              <div class="fish red-fish">
+                <div class="top-fin"></div>
+                <div class="fish-body"></div>
+                <div class="tail-fin"></div>
+                <div class="side-fin"></div>
+                <div class="scale scale-1"></div>
+                <div class="scale scale-2"></div>
+                <div class="scale scale-3"></div>
+              </div>
+    <div class="fish red-fish">
+                <div class="top-fin"></div>
+                <div class="fish-body"></div>
+                <div class="tail-fin"></div>
+                <div class="side-fin"></div>
+                <div class="scale scale-1"></div>
+                <div class="scale scale-2"></div>
+                <div class="scale scale-3"></div>
+    </div>
+    <div class="fish red-fish">
+                <div class="top-fin"></div>
+                <div class="fish-body"></div>
+                <div class="tail-fin"></div>
+                <div class="side-fin"></div>
+                <div class="scale scale-1"></div>
+                <div class="scale scale-2"></div>
+                <div class="scale scale-3"></div>
+    </div>
+    
+          </div>
 </body>
 <head>
     <script>
