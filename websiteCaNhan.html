@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PAGE</title>
+    <style>
+      body{
+        background-color: #000000;
+        color: #ffffff;
+      }
+        header {
+          background-color:#282a36;
+          padding: 20px;
+          text-align: center;
+          color: white;
+          width: 100%;
+        }
+        
+        nav{
+          background-color: #44475a;
+          color: #fff;
+          text-align: center;
+          padding: 1em;
+          width: 100%;
+        }
+
+        nav a {
+          color: #50fa7b;
+          margin: 0 15px;
+        }
+        
+        h2 {
+          color: black; 
+        }
+
+        li {
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 18px; 
+        }
+        footer p {
+            background-color:#282a36;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            bottom: 0;
+            width: 100%;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Trang chủ</h1>
+      </header>
+      <nav>
+          <a href="#home">Trang chủ</a>
+          <a href="#study">Kế hoạch học tập</a>
+          <a href="#interests">Sở thích</a>
+          <a href="#contact">Liên hệ</a>
+      </nav>
+      <main>
+        <h2 id="home">Giới thiệu</h2>
+        <p>Thông tin cá nhân:</p>
+        <p>Họ và tên: Phan Gia Huy</p>
+        <ul>
+          <li><strong>Ngày sinh:</strong>28/07/2005</li>
+          <li><strong>Tuổi:</strong>18</li>
+          <li><strong>Giới tính:</strong>Nam</li>
+          <li><strong>Địa chỉ:</strong>14/10D đường 5C,phường BHHA,quận Bình Tân,TP.HCM</li>
+        </ul>
+    
+        <h2 id="study">Kế hoạch học tập</h2>
+        <p>kế hoạch học tập</p>
+        <ul>
+          <li><strong>Ngắn hạn:</strong>điểm rèn luyện >90, điểm trung bình các môn từ B trở lên</li>
+          <li><strong>Dài hạn:</strong> Tốt nghiệp đúng hạn, học cao học, cao hơn là nghiên cứu sinh</li>
+        </ul>
+    
+        <h2 id="interests">Sở thích</h2>
+        <p>sở thích.</p>
+        <ul>
+          <li>nuôi kiến</li>
+          <li>Du lịch.</li>
+          <li>đánh cầu lông</li>
+        </ul>
+    
+        <h2 id="contact">Liên hệ</h2>
+        <p>form liên hệ/góp ý</p>
+        <form action="submit.php" method="POST">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Nội dung:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Gửi">
+        </form>
+      </main>
+    <footer>
+    </footer>
+</body>
+</html>
